@@ -1,0 +1,74 @@
+.gender{
+        position: absolute;
+        top:10%;
+        left: 200%;
+        }
+
+.gender img{
+        cursor: pointer;
+
+        }
+
+.gender span{
+        position:absolute;
+        width:150px;
+        background: black;
+        color: red;
+        padding: 5px 0;
+        text-align: center;
+        border-radius: 8px;
+        display: block;
+        margin: 0 auto;
+        opacity: 0 ;
+        transition: 0.6s opacity;
+        }
+.gender span before{
+        content:'';
+        width: 10px;
+        height: 10px;
+        position: top;
+        top:-6px;
+        background: black;
+        }
+
+.gender:hover > span{
+        opacity:1;
+        }
+
+
+.chestpain{
+        position: absolute;
+        top:10%;
+        left: 115%;
+        }
+
+.chestpain img{
+        cursor: pointer;
+
+        }
+
+.chestpain span{
+        position:absolute;
+        width:150px;
+        background: black;
+        color: white;
+        padding: 5px 0;
+        text-align: center;
+        border-radius: 8px;
+        display: block;
+        margin: 0 auto;
+        opacity: 0 ;
+        transition: 0.6s opacity;
+        }
+.chestpain span before{
+        content:'';
+        width: 10px;
+        height: 10px;
+        position: top;
+        top:-6px;
+        background: black;
+        }
+
+.chestpain:hover > span{
+        opacity:1;
+        }
