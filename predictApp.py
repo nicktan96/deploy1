@@ -11,7 +11,7 @@ model=pickle.load(open('genModel.pkl','rb'))
 def hello_world():
     return render_template("heart_prediction.html")
 
-@app.route('/predict',methods=['POST','GET'])
+@app.route('/predict',methods=['POST'])
 def predict():
     # For age
     data1 = request.form['age']
