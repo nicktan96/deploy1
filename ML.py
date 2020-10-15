@@ -13,9 +13,9 @@ y = dataset.iloc[:,-1].values
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size =0.20)
 
-sc = preprocessing.StandardScaler()
-X_train = pd.DataFrame(sc.fit_transform(X_train))
-X_test = pd.DataFrame(sc.transform(X_test))
+# sc = preprocessing.StandardScaler()
+# X_train = pd.DataFrame(sc.fit_transform(X_train))
+# X_test = pd.DataFrame(sc.transform(X_test))
 
 from sklearn.ensemble import RandomForestClassifier
 classifier = RandomForestClassifier(n_estimators = 250, criterion = 'gini', max_features = 'log2', random_state=0)
